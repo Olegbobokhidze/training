@@ -15,3 +15,19 @@ const notDuplicated = (arr) => {
   }
   return uniqueList;
 };
+
+const dnaToRna = (dna) => {
+  let result = [];
+  for (let i = 0; i < dna.length; i++) {
+    let letter = dna[i];
+    if (letter === "T") {
+      result.push("U");
+    } else if (letter === "U") {
+      result.push("T");
+    } else {
+      result.push(letter);
+    }
+  }
+  const together = result.join("");
+  return together;
+};
