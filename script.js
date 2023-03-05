@@ -5,3 +5,13 @@
 const filterFunct = (arr) => {
   return arr.filter((e) => Number.isInteger(e));
 };
+
+const notDuplicated = (arr) => {
+  const uniqueList = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (i === 0 || arr[i] !== arr[i - 1]) {
+      uniqueList.push(arr[i]);
+    }
+  }
+  return uniqueList;
+};
