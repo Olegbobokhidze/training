@@ -34,3 +34,6 @@ const dnaToRna = (dna) => {
 function paperwork(n, m) {
   return n < 0 || m < 0 ? 0 : n * m;
 }
+function greet(name, owner) {
+  return name === owner ? "Hello boss" : "Hello guest";
+}
